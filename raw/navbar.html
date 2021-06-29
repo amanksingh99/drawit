@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+
+        <style>
+            .material-icons {
+                font-family: "Material Icons";
+                font-weight: normal;
+                font-style: normal;
+                font-size: 24px; /* Preferred icon size */
+                display: inline-block;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+
+                /* Support for all WebKit browsers. */
+                -webkit-font-smoothing: antialiased;
+                /* Support for Safari and Chrome. */
+                text-rendering: optimizeLegibility;
+
+                /* Support for Firefox. */
+                -moz-osx-font-smoothing: grayscale;
+
+                /* Support for IE. */
+                font-feature-settings: "liga";
+            }
+            * {
+                box-sizing: border-box;
+                color: #555;
+            }
+            body {
+                margin: 0;
+            }
+            .navbar {
+                height: 8vh;
+                display: flex;
+                position: relative;
+                box-shadow: 0px 2px 40px -12px rgba(0, 0, 0, 0.25);
+                align-items: center;
+            }
+
+            .navbar__logo {
+                margin: 0 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .navbar__logo #logo {
+                width: 40px;
+                opacity: 0.75;
+            }
+
+            .separator {
+                border-left: 1px solid lightgray;
+                height: 40%;
+                position: absolute;
+                left: 5rem;
+            }
+
+            .navbar__title {
+                margin-left: 2rem;
+            }
+
+            .navbar__title #title {
+                border: 0;
+                padding: 5px;
+                font-weight: bold;
+                font-size: 1.1rem;
+            }
+            .navbar__title #title:focus {
+                outline: 0;
+                border-bottom: 1px solid lightgray;
+            }
+            .navbar__menu {
+                position: absolute;
+                right: 1rem;
+                display: flex;
+                align-items: center;
+            }
+
+            .navbar__icons {
+                display: flex;
+                align-items: center;
+            }
+
+            .navbar__icons > * {
+                margin-left: 1rem;
+            }
+
+            .navbar__avatar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 2rem;
+            }
+
+            .navbar__avatar #avatar {
+                width: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img id="logo" src="d.png" alt="logo" />
+            </div>
+            <div class="separator"></div>
+            <div class="navbar__title">
+                <input id="title" type="text" value="Project Name" />
+            </div>
+            <div class="navbar__menu">
+                <div class="navbar__icons">
+                    <span class="material-icons"> add_circle </span>
+                    <span class="material-icons"> save </span>
+                    <span class="material-icons"> save_alt </span>
+                    <span class="material-icons navbar__icons--setting">
+                        settings
+                    </span>
+                </div>
+                <div class="navbar__avatar">
+                    <img id="avatar" src="./avatar.png" alt="avatar" />
+                </div>
+            </div>
+        </nav>
+    </body>
+</html>
